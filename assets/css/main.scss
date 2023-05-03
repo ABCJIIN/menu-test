@@ -70,18 +70,19 @@
                 gap: 4rem;
                 .accordion-menu {
                     width: 28%;
+                    border: 1px solid #000;
+                    background: skyblue;
                     .accordion-inner {
                         width: 100%;
                         border: 1px solid #b5b5b6;
                         background: pink;
-                        // .list-01 {
-                        //     .list-02 {
-                        //         display: none;
-                        //         .list-03 {
-                        //             display: none;
-                        //         }
-                        //     }
-                        // }
+                        .list {
+                            li {
+                                .contents {
+                                    display: none;
+                                }
+                            }
+                        }
                     }
                 }
                 .menu-table {
@@ -93,12 +94,9 @@
                         border-bottom: 1px solid #b5b5b6;
                         tr {
                             border: 1px solid #e4e4e4;
+                            height: 5.2rem;
                             &:last-child {
                                 th {
-                                    height: 21.6rem;
-                                    // line-height: 21.6rem;
-                                }
-                                td {
                                     height: 21.6rem;
                                 }
                             }
@@ -106,24 +104,31 @@
                                 background: #f3f5f8;
                                 font-size: 1.6rem;
                                 text-align: left;
+                                vertical-align: middle;
                                 width: 16rem;
-                                height: 5.2rem;
                                 label {
                                     margin-left: 2rem;
                                 }
                             }
                             td {
-                                height: 5.2rem;
+                                height: 100%;
                                 input {
                                     width: 50%;
-                                    height: calc(100% - 1.4rem);
+                                    height: calc(100% - 3.4rem);
                                     margin: 0.7rem;
                                     border: 1px solid #e4e4e4;
-                                    padding: 0;
+                                    padding: 1rem;
+                                    &:focus {
+                                        border-color: #e4e4e4;
+                                        box-shadow: 0 0 1px 1px #000;
+                                        color: #222;
+                                        outline: none;
+                                    }
                                 }
                                 select {
                                     height: calc(100% - 1.4rem);
                                     margin: 0.7rem;
+                                    padding: 1rem;
                                     width: 20rem;
                                     -o-appearance: none;
                                     -webkit-appearance: none;
@@ -131,6 +136,7 @@
                                     appearance: none;
                                     background: url(../images/arrow.png) calc(100% - 1.5rem) center no-repeat #fff;
                                     background-size: 1.7rem 0.9rem;
+                                    
                                     border: 1px solid #e4e4e4;
                                     outline: none;
                                     &:focus {
@@ -141,20 +147,27 @@
                                     }
                                 }
                                 textarea {
-                                    width: calc(100% - 1.4rem);
-                                    height: calc(100% - 1.4rem);
+                                    width: calc(100% - 3.4rem);
+                                    height: calc(21.6rem - 3.4rem);
                                     margin: 0.7rem;
-                                    padding: 0;
+                                    border: 1px solid #e4e4e4;
+                                    padding: 1rem;
                                     resize: none;
+                                    &:focus {
+                                        border-color: #e4e4e4;
+                                        box-shadow: 0 0 1px 1px #000;
+                                        color: #222;
+                                        outline: none;
+                                    }
                                     &::-webkit-scrollbar {
                                         width: 8px;
                                     }
                                     &::-webkit-scrollbar-track {
                                         background-color: #fff;
-                                        border-radius: 100px;
+                                        border-radius: 10px;
                                     }
                                     &::-webkit-scrollbar-thumb {
-                                        border-radius: 100px;
+                                        border-radius: 10px;
                                         background-color: #e4e4e4;
                                     }
                                 }

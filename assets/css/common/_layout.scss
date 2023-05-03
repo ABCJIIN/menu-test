@@ -31,11 +31,22 @@
                 @include flexbox(row, center, center);
                 gap: 3rem;
                 li {
+                    position: relative;
                     width: 14rem;
                     text-align: center;
                     line-height: 7.5rem;
                     &:hover {
-                        border-bottom: 4px solid #005c9e;
+                        &::after {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            content: '';
+                            display: inline-block;
+                            width: 14rem;
+                            height: 4px;
+                            background-color: #005c9e;
+                        }
+                        // border-bottom: 4px solid #005c9e;
                     }
                     a {
                         color: #000;

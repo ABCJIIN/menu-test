@@ -22,6 +22,7 @@ body {
   color: #003b7e;
   font-size: 1.6rem;
   padding: 0.9rem 5.7rem;
+  cursor: pointer;
 }
 
 html {
@@ -48,6 +49,7 @@ body {
   color: #003b7e;
   font-size: 1.6rem;
   padding: 0.9rem 5.7rem;
+  cursor: pointer;
 }
 
 #header {
@@ -90,12 +92,20 @@ body {
   gap: 3rem;
 }
 #header .inner .gnb-area .gnb li {
+  position: relative;
   width: 14rem;
   text-align: center;
   line-height: 7.5rem;
 }
-#header .inner .gnb-area .gnb li:hover {
-  border-bottom: 4px solid #005c9e;
+#header .inner .gnb-area .gnb li:hover::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 14rem;
+  height: 4px;
+  background-color: #005c9e;
 }
 #header .inner .gnb-area .gnb li a {
   color: #000;
@@ -206,11 +216,16 @@ body {
 }
 #container #siteManage .menu-manage .menu-container .accordion-menu {
   width: 28%;
+  border: 1px solid #000;
+  background: skyblue;
 }
 #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner {
   width: 100%;
   border: 1px solid #b5b5b6;
   background: pink;
+}
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .contents {
+  display: none;
 }
 #container #siteManage .menu-manage .menu-container .menu-table {
   width: 72%;
@@ -223,36 +238,41 @@ body {
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr {
   border: 1px solid #e4e4e4;
+  height: 5.2rem;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr:last-child th {
-  height: 21.6rem;
-}
-#container #siteManage .menu-manage .menu-container .menu-table table tr:last-child td {
   height: 21.6rem;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr th {
   background: #f3f5f8;
   font-size: 1.6rem;
   text-align: left;
+  vertical-align: middle;
   width: 16rem;
-  height: 5.2rem;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr th label {
   margin-left: 2rem;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td {
-  height: 5.2rem;
+  height: 100%;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td input {
   width: 50%;
-  height: calc(100% - 1.4rem);
+  height: calc(100% - 3.4rem);
   margin: 0.7rem;
   border: 1px solid #e4e4e4;
-  padding: 0;
+  padding: 1rem;
+}
+#container #siteManage .menu-manage .menu-container .menu-table table tr td input:focus {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 1px 1px #000;
+  color: #222;
+  outline: none;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td select {
   height: calc(100% - 1.4rem);
   margin: 0.7rem;
+  padding: 1rem;
   width: 20rem;
   -o-appearance: none;
   -webkit-appearance: none;
@@ -270,20 +290,27 @@ body {
   outline: none;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea {
-  width: calc(100% - 1.4rem);
-  height: calc(100% - 1.4rem);
+  width: calc(100% - 3.4rem);
+  height: 18.2rem;
   margin: 0.7rem;
-  padding: 0;
+  border: 1px solid #e4e4e4;
+  padding: 1rem;
   resize: none;
+}
+#container #siteManage .menu-manage .menu-container .menu-table table tr td textarea:focus {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 1px 1px #000;
+  color: #222;
+  outline: none;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar {
   width: 8px;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar-track {
   background-color: #fff;
-  border-radius: 100px;
+  border-radius: 10px;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar-thumb {
-  border-radius: 100px;
+  border-radius: 10px;
   background-color: #e4e4e4;
 }
