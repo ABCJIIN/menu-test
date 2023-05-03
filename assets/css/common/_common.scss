@@ -1,0 +1,15 @@
+@import "responsive";
+
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+}
+
+@mixin flexbox($direction, $justfy, $align){
+	display:flex;
+    flex-direction: $direction;
+    justify-content: $justfy;
+    align-items: $align;
+}
