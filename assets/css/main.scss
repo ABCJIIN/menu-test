@@ -1,3 +1,169 @@
 @import "./common/common";
 @import "./common/layout";
 
+#container {
+    width: 100%;
+    @include flexbox(row, center, center);
+    #siteNav {
+        width: 15%;
+        height: calc(100vh - 7.5rem);
+        background: #f1f1f1;
+        .nav-inner {
+            width: calc(100% - 4.4rem);
+            margin: 2.5rem 2.2rem 0 2.2rem;
+            box-shadow: 0 5px 10px #d3d3d3;
+            .nav-title {
+                width: 100%;
+                height: 7rem;
+                line-height: 7rem;
+                background: #005c9e;
+                color: #fff;
+                span {
+                    padding-left: 2.2rem;
+                    font-size: 2rem;
+                }
+            }
+            .list {
+                width: 100%;
+                li {
+                    width: 100%;
+                    padding: 2.5rem 0;
+                    background: #fff;
+                    &:not(:last-child) {
+                        border-bottom: 1px solid #e4e4e4;
+                    }
+                    a {
+                        @include flexbox(row, flex-start, center);
+                        gap: 0.7rem;
+                        margin-left: 2.5rem;
+                        font-size: 1.6rem;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    #siteManage {
+        width: 85%;
+        height: calc(100vh - 7.5rem);
+        background: #f1f1f1;
+        .menu-manage {
+            width: calc(100% - 2.5rem);
+            height: calc(100% - 4.7rem);
+            margin: 2.5rem 2.5rem 2.2rem 0;
+            background: #fff;
+            .title {
+                width: calc(100% - 8rem);
+                margin: 0 4rem;
+                padding: 2rem 0 2.5rem 0;
+                border-bottom: 1px solid #e4e4e4;
+                strong {
+                    color: #000;
+                    font-size: 2.6rem;
+                    margin-left: 1rem;
+                }
+            }
+            .menu-container {
+                width: calc(100% - 8rem);
+                margin: 2rem 4rem 0 4rem;
+                @include flexbox(row, flex-start, flex-start);
+                gap: 4rem;
+                .accordion-menu {
+                    width: 28%;
+                    .accordion-inner {
+                        width: 100%;
+                        border: 1px solid #b5b5b6;
+                        background: pink;
+                        // .list-01 {
+                        //     .list-02 {
+                        //         display: none;
+                        //         .list-03 {
+                        //             display: none;
+                        //         }
+                        //     }
+                        // }
+                    }
+                }
+                .menu-table {
+                    width: 72%;
+                    background: #fff;
+                    table {
+                        width: 100%;
+                        border-top: 1px solid #b5b5b6;
+                        border-bottom: 1px solid #b5b5b6;
+                        tr {
+                            border: 1px solid #e4e4e4;
+                            &:last-child {
+                                th {
+                                    height: 21.6rem;
+                                    // line-height: 21.6rem;
+                                }
+                                td {
+                                    height: 21.6rem;
+                                }
+                            }
+                            th {
+                                background: #f3f5f8;
+                                font-size: 1.6rem;
+                                text-align: left;
+                                width: 16rem;
+                                height: 5.2rem;
+                                // line-height: 5.2rem;
+                                label {
+                                    margin-left: 2rem;
+                                }
+                            }
+                            td {
+                                height: 5.2rem;
+                                input {
+                                    width: 50%;
+                                    height: calc(100% - 1.4rem);
+                                    margin: 0.7rem;
+                                    border: 1px solid #e4e4e4;
+                                    padding: 0;
+                                }
+                                select {
+                                    height: calc(100% - 1.4rem);
+                                    margin: 0.7rem;
+                                    width: 20rem;
+                                    -o-appearance: none;
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    appearance: none;
+                                    background: url(../images/arrow.png) calc(100% - 1.5rem) center no-repeat #fff;
+                                    background-size: 1.7rem 0.9rem;
+                                    border: 1px solid #e4e4e4;
+                                    outline: none;
+                                    &:focus {
+                                        border-color: #e4e4e4;
+                                        box-shadow: 0 0 1px 1px #039bd9;
+                                        color: #222;
+                                        outline: none;
+                                    }
+                                }
+                                textarea {
+                                    width: calc(100% - 1.4rem);
+                                    height: calc(100% - 1.4rem);
+                                    margin: 0.7rem;
+                                    padding: 0;
+                                    resize: none;
+                                    &::-webkit-scrollbar {
+                                        width: 8px;
+                                    }
+                                    &::-webkit-scrollbar-track {
+                                        background-color: #fff;
+                                        border-radius: 100px;
+                                    }
+                                    &::-webkit-scrollbar-thumb {
+                                        border-radius: 100px;
+                                        background-color: #e4e4e4;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

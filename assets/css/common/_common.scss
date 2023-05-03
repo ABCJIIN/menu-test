@@ -5,6 +5,8 @@ html {
 }
 body {
     font-size: 1.6rem;
+    // width: 100vw;
+    // height: 100vh;
 }
 
 @mixin flexbox($direction, $justfy, $align){
@@ -12,4 +14,19 @@ body {
     flex-direction: $direction;
     justify-content: $justfy;
     align-items: $align;
+}
+
+.btn-wrap {
+    width: 100%;
+    padding-top: 1rem;
+    @include flexbox(row, flex-end, center);
+    gap: 2.2rem;
+    button {
+        background: transparent;
+        border: 1px solid #003b7e;
+        border-radius: 0.4rem;
+        color: #003b7e;
+        font-size: 1.6rem;
+        padding: 0.9rem 5.7rem;
+    }
 }
