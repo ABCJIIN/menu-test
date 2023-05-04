@@ -1,0 +1,609 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f1f1f1;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* font */
+/* color */
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#container #siteNav {
+  width: 15%;
+  height: 100%;
+  background: #f1f1f1;
+}
+#container #siteNav .nav-inner {
+  width: calc(100% - 4.4rem);
+  margin: 2.5rem 2.2rem 0 2.2rem;
+  box-shadow: 0 5px 10px #d3d3d3;
+}
+#container #siteNav .nav-inner .nav-title {
+  width: 100%;
+  height: 7rem;
+  line-height: 7rem;
+  background: #005c9e;
+  color: #fff;
+}
+#container #siteNav .nav-inner .nav-title span {
+  padding-left: 2.2rem;
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 2rem;
+}
+#container #siteNav .nav-inner .list {
+  width: 100%;
+}
+#container #siteNav .nav-inner .list li {
+  width: 100%;
+  padding: 2.5rem 0;
+  background: #fff;
+}
+#container #siteNav .nav-inner .list li:nth-child(1) a {
+  color: #005c9e;
+  font-weight: 700;
+}
+#container #siteNav .nav-inner .list li:not(:last-child) {
+  border-bottom: 1px solid #e4e4e4;
+}
+#container #siteNav .nav-inner .list li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 2.5rem;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #222222;
+}
+
+.btn-wrap {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.2rem;
+}
+.btn-wrap button {
+  background: #fff;
+  border: 1px solid #003b7e;
+  border-radius: 0.4rem;
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #003b7e;
+  font-size: 1.6rem;
+  padding: 0.9rem 5.7rem;
+  cursor: pointer;
+}
+.btn-wrap button:hover {
+  background: #003b7e;
+  color: #fff;
+  transition: all 0.1s ease-in;
+}
+
+.page .btn-wrap {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.page .btn-wrap button {
+  width: 4.4rem;
+  height: 4.4rem;
+  background: #fff;
+  border: 1px solid #b5b5b6;
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.page .btn-wrap button img {
+  height: 1.8rem;
+}
+
+td {
+  font-weight: 400;
+  height: 100%;
+}
+td input {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 50%;
+  height: calc(100% - 3.4rem);
+  margin: 0.7rem;
+  border: 1px solid #e4e4e4;
+  padding: 1rem;
+}
+td input:focus {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 1px 1px #000;
+  color: #222;
+  outline: none;
+}
+td select {
+  position: relative;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
+  height: calc(100% - 1.4rem);
+  margin: 0.7rem;
+  padding: 1rem;
+  width: 20rem;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../images/arrow.png) calc(100% - 1.5rem) center no-repeat #fff;
+  background-size: 1.7rem 0.9rem;
+  border: 1px solid #e4e4e4;
+  outline: none;
+}
+td select:focus {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 1px 1px #039bd9;
+  color: #222;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f1f1f1;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* font */
+/* color */
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#container #siteNav {
+  width: 15%;
+  height: 100%;
+  background: #f1f1f1;
+}
+#container #siteNav .nav-inner {
+  width: calc(100% - 4.4rem);
+  margin: 2.5rem 2.2rem 0 2.2rem;
+  box-shadow: 0 5px 10px #d3d3d3;
+}
+#container #siteNav .nav-inner .nav-title {
+  width: 100%;
+  height: 7rem;
+  line-height: 7rem;
+  background: #005c9e;
+  color: #fff;
+}
+#container #siteNav .nav-inner .nav-title span {
+  padding-left: 2.2rem;
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-size: 2rem;
+}
+#container #siteNav .nav-inner .list {
+  width: 100%;
+}
+#container #siteNav .nav-inner .list li {
+  width: 100%;
+  padding: 2.5rem 0;
+  background: #fff;
+}
+#container #siteNav .nav-inner .list li:nth-child(1) a {
+  color: #005c9e;
+  font-weight: 700;
+}
+#container #siteNav .nav-inner .list li:not(:last-child) {
+  border-bottom: 1px solid #e4e4e4;
+}
+#container #siteNav .nav-inner .list li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 2.5rem;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #222222;
+}
+
+.btn-wrap {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.2rem;
+}
+.btn-wrap button {
+  background: #fff;
+  border: 1px solid #003b7e;
+  border-radius: 0.4rem;
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #003b7e;
+  font-size: 1.6rem;
+  padding: 0.9rem 5.7rem;
+  cursor: pointer;
+}
+.btn-wrap button:hover {
+  background: #003b7e;
+  color: #fff;
+  transition: all 0.1s ease-in;
+}
+
+.page .btn-wrap {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.page .btn-wrap button {
+  width: 4.4rem;
+  height: 4.4rem;
+  background: #fff;
+  border: 1px solid #b5b5b6;
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.page .btn-wrap button img {
+  height: 1.8rem;
+}
+
+td {
+  font-weight: 400;
+  height: 100%;
+}
+td input {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 50%;
+  height: calc(100% - 3.4rem);
+  margin: 0.7rem;
+  border: 1px solid #e4e4e4;
+  padding: 1rem;
+}
+td input:focus {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 1px 1px #000;
+  color: #222;
+  outline: none;
+}
+td select {
+  position: relative;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
+  height: calc(100% - 1.4rem);
+  margin: 0.7rem;
+  padding: 1rem;
+  width: 20rem;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../images/arrow.png) calc(100% - 1.5rem) center no-repeat #fff;
+  background-size: 1.7rem 0.9rem;
+  border: 1px solid #e4e4e4;
+  outline: none;
+}
+td select:focus {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 1px 1px #039bd9;
+  color: #222;
+  outline: none;
+}
+
+#header {
+  width: 100%;
+  height: 7.5rem;
+  position: relative;
+  z-index: 1;
+}
+#header .inner {
+  width: calc(100% - 10.6rem);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4.6rem;
+  padding-right: 6rem;
+  background: #fff;
+  box-shadow: 0 5px 10px #d3d3d3;
+}
+#header .inner .logo {
+  width: 15%;
+}
+#header .inner .logo a img {
+  width: 19rem;
+  height: 1.9rem;
+}
+#header .inner .gnb-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .inner .gnb-area .gnb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+#header .inner .gnb-area .gnb li {
+  width: 14rem;
+  text-align: center;
+  line-height: 7.5rem;
+  transition: all 1s ease-in-out;
+}
+#header .inner .gnb-area .gnb li a {
+  position: relative;
+  width: 100%;
+  color: #222222;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+#header .inner .gnb-area .gnb li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: #005c9e;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+#header .inner .gnb-area .gnb li a:hover {
+  font-weight: 700;
+}
+#header .inner .gnb-area .gnb li a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+#header .inner .gnb-area .login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#header .inner .gnb-area .login img {
+  width: 1.8rme;
+  margin-right: 0.6rem;
+}
+#header .inner .gnb-area .login span {
+  font-family: "Pretendard";
+  font-weight: 400;
+  color: #222222;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+}
+#header .inner .gnb-area .login button {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #b3b3b3;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.4rem;
+  border: 1px solid #b3b3b3;
+  background: transparent;
+  cursor: pointer;
+}
+
+#container #odaInform {
+  width: 85%;
+  height: calc(100vh - 7.5rem);
+  background: #f1f1f1;
+}
+#container #odaInform .office-data {
+  width: calc(100% - 2.5rem);
+  height: calc(100% - 5.2rem);
+  margin: 2.5rem 2.5rem 2.5rem 0;
+  background: #fff;
+  box-shadow: 0 5px 10px #d3d3d3;
+  border: 1px solid #e4e4e4;
+}
+#container #odaInform .office-data .title {
+  width: calc(100% - 8rem);
+  margin: 0 4rem;
+  padding: 2rem 0 2.5rem 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+#container #odaInform .office-data .title strong {
+  font-family: "Pretendard";
+  font-weight: 700;
+  color: #222222;
+  font-size: 2.6rem;
+  margin-left: 1rem;
+}
+#container #odaInform .office-data .search {
+  width: calc(100% - 8rem);
+  margin: 2rem 4rem;
+  border-top: 1px solid #767676;
+  border-bottom: 1px solid #767676;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#container #odaInform .office-data .search .search-tb {
+  width: calc(100% - 18.7rem);
+  height: 100%;
+  border-right: 1px solid #e4e4e4;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#container #odaInform .office-data .search .search-tb tbody {
+  width: 100%;
+}
+#container #odaInform .office-data .search .search-tb tbody tr {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+}
+#container #odaInform .office-data .search .search-tb tbody tr th {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 12rem;
+  background: #f3f5f8;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Pretendard";
+  color: #222222;
+}
+#container #odaInform .office-data .search .search-tb tbody tr th label {
+  margin-left: 2.2rem;
+}
+#container #odaInform .office-data .search .search-tb tbody tr td {
+  width: 50%;
+  background: #fff;
+}
+#container #odaInform .office-data .search .search-tb tbody tr td input {
+  width: 80%;
+}
+#container #odaInform .office-data .search .btn-wrap {
+  padding: 0 2rem;
+  height: 100%;
+}
+#container #odaInform .office-data .result {
+  width: calc(100% - 8rem);
+  margin: 0 4rem;
+  padding-top: 2rem;
+}
+#container #odaInform .office-data .result span {
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222222;
+}
+#container #odaInform .office-data .result .result-tb {
+  width: 100%;
+  margin-top: 0.8rem;
+  border-top: 2px solid #b5b5b6;
+  border-bottom: 2px solid #b5b5b6;
+}
+#container #odaInform .office-data .result .result-tb tr:nth-child(1) {
+  border-bottom: 2px solid #b5b5b6;
+}
+#container #odaInform .office-data .result .result-tb tr th {
+  height: 6rem;
+  vertical-align: middle;
+  background: #f3f5f8;
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222222;
+}
+#container #odaInform .office-data .result .result-tb tr td {
+  height: 4rem;
+  vertical-align: middle;
+  text-align: center;
+  border: 1.3px solid #f4f4f4;
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #222222;
+}
+#container #odaInform .office-data .result .result-tb tr td:nth-child(2) {
+  text-align: left;
+}
+#container #odaInform .office-data .result .result-tb tr td:nth-child(2) a {
+  margin-left: 1.1rem;
+  width: 100%;
+  color: #222222;
+}
+#container #odaInform .office-data .page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#container #odaInform .office-data .page ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 3.2rem;
+}
+#container #odaInform .office-data .page ul li {
+  width: 2rem;
+  text-align: center;
+}
+#container #odaInform .office-data .page ul li a {
+  position: relative;
+  font-family: "Pretendard";
+  font-weight: 400;
+  color: #767676;
+  font-size: 1.8rem;
+}
+#container #odaInform .office-data .page ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #003b7e;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+#container #odaInform .office-data .page ul li a:hover {
+  font-weight: 700;
+  color: #003b7e;
+}
+#container #odaInform .office-data .page ul li a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
