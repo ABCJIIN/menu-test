@@ -53,7 +53,7 @@ $black: #222222;
                     width: 100%;
                     padding: 2.5rem 0;
                     background: #fff;
-                    &:nth-child(1) {
+                    &.on {
                         a {
                             color: #005c9e;
                             font-weight: 700;

@@ -49,7 +49,7 @@ body {
   padding: 2.5rem 0;
   background: #fff;
 }
-#container #siteNav .nav-inner .list li:nth-child(1) a {
+#container #siteNav .nav-inner .list li.on a {
   color: #005c9e;
   font-weight: 700;
 }
@@ -216,7 +216,7 @@ body {
   padding: 2.5rem 0;
   background: #fff;
 }
-#container #siteNav .nav-inner .list li:nth-child(1) a {
+#container #siteNav .nav-inner .list li.on a {
   color: #005c9e;
   font-weight: 700;
 }
