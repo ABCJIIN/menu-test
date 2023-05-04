@@ -5,9 +5,16 @@ html {
 }
 body {
     font-size: 1.6rem;
+    background-color: #f1f1f1;
     // width: 100vw;
     // height: 100vh;
 }
+
+/* font */
+$pretendard: 'Pretendard';
+
+/* color */
+$black: #222222;
 
 @mixin flexbox($direction, $justfy, $align){
 	display:flex;
@@ -22,12 +29,20 @@ body {
     @include flexbox(row, flex-end, center);
     gap: 2.2rem;
     button {
-        background: transparent;
+        background: #fff;
         border: 1px solid #003b7e;
         border-radius: 0.4rem;
+        font-family: $pretendard;
+        font-size: 1.6rem;
+        font-weight: 400;
         color: #003b7e;
         font-size: 1.6rem;
         padding: 0.9rem 5.7rem;
         cursor: pointer;
+        &:hover {
+            background: #003b7e;
+            color: #fff;
+            transition: all 0.1s ease-in;
+        }
     }
 }

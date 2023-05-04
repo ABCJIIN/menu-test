@@ -20,6 +20,8 @@
                 color: #fff;
                 span {
                     padding-left: 2.2rem;
+                    font-family: $pretendard;
+                    font-weight: 700;
                     font-size: 2rem;
                 }
             }
@@ -36,8 +38,10 @@
                         @include flexbox(row, flex-start, center);
                         gap: 0.7rem;
                         margin-left: 2.5rem;
+                        font-family: $pretendard;
+                        font-weight: 400;
                         font-size: 1.6rem;
-                        color: #000;
+                        color: $black;
                     }
                 }
             }
@@ -52,13 +56,17 @@
             height: calc(100% - 4.7rem);
             margin: 2.5rem 2.5rem 2.2rem 0;
             background: #fff;
+            box-shadow: 0 5px 10px #d3d3d3;
+            border: 1px solid #e4e4e4;
             .title {
                 width: calc(100% - 8rem);
                 margin: 0 4rem;
                 padding: 2rem 0 2.5rem 0;
                 border-bottom: 1px solid #e4e4e4;
                 strong {
-                    color: #000;
+                    font-family: $pretendard;
+                    font-weight: 700;
+                    color: $black;
                     font-size: 2.6rem;
                     margin-left: 1rem;
                 }
@@ -70,16 +78,53 @@
                 gap: 4rem;
                 .accordion-menu {
                     width: 28%;
-                    border: 1px solid #000;
-                    background: skyblue;
                     .accordion-inner {
                         width: 100%;
                         border: 1px solid #b5b5b6;
-                        background: pink;
+                        min-height: 61.5rem;
+                        background: #fff;
                         .list {
+                            width: calc(100% - 2rem);
+                            padding: 2.3rem 1rem;
                             li {
-                                .contents {
-                                    display: none;
+                                width: 100%;
+                                @include flexbox(column, flex-start,flex-start);
+                                .list-item {
+                                    width: 100%;
+                                    @include flexbox(column, flex-start,flex-start);
+                                    &.item-01 {
+                                        p {
+                                            width: calc(100% - 1.8rem);
+                                            padding-left: 1.8rem;
+                                        }
+                                    }
+                                    &.item-02 {
+                                        p {
+                                            width: calc(100% - 3.6rem);
+                                            padding-left: 3.6rem;
+                                        }
+                                    }
+                                    &.item-03 {
+                                        p {
+                                            width: calc(100% - 5.4rem);
+                                            padding-left: 5.4rem;
+                                        }
+                                    }
+                                    p {
+                                        width: 100%;
+                                        padding: 0.5rem 0;
+                                        font-family: $pretendard;
+                                        font-weight: 400;
+                                        font-size: 1.6rem;
+                                        color: $black;
+                                        @include flexbox(row,flex-start,center);
+                                        gap: 1.2rem;
+                                        &:hover {
+                                            background: #f4f4f4;
+                                            font-weight: 700;
+                                            transition: all 0.2s ease-in-out;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -87,11 +132,15 @@
                 }
                 .menu-table {
                     width: 72%;
-                    background: #fff;
                     table {
+                        font-family: $pretendard;
+                        color: $black;
+                        font-size: 1.6rem;
                         width: 100%;
-                        border-top: 1px solid #b5b5b6;
-                        border-bottom: 1px solid #b5b5b6;
+                        border-top: 2px solid #b5b5b6;
+                        border-bottom: 2px solid #b5b5b6;
+                        background: #fff;
+                        min-height: 61.5rem;
                         tr {
                             border: 1px solid #e4e4e4;
                             height: 5.2rem;
@@ -101,8 +150,8 @@
                                 }
                             }
                             th {
+                                font-weight: 700;
                                 background: #f3f5f8;
-                                font-size: 1.6rem;
                                 text-align: left;
                                 vertical-align: middle;
                                 width: 16rem;
@@ -111,8 +160,12 @@
                                 }
                             }
                             td {
+                                font-weight: 400;
                                 height: 100%;
                                 input {
+                                    font-family: $pretendard;
+                                    font-weight: 400;
+                                    font-size: 1.6rem;
                                     width: 50%;
                                     height: calc(100% - 3.4rem);
                                     margin: 0.7rem;
@@ -125,30 +178,60 @@
                                         outline: none;
                                     }
                                 }
-                                select {
+                                .select-box {
+                                    position: relative;
+                                    width: 20rem;
                                     height: calc(100% - 1.4rem);
                                     margin: 0.7rem;
-                                    padding: 1rem;
-                                    width: 20rem;
-                                    -o-appearance: none;
-                                    -webkit-appearance: none;
-                                    -moz-appearance: none;
-                                    appearance: none;
-                                    background: url(../images/arrow.png) calc(100% - 1.5rem) center no-repeat #fff;
-                                    background-size: 1.7rem 0.9rem;
-                                    
-                                    border: 1px solid #e4e4e4;
-                                    outline: none;
-                                    &:focus {
-                                        border-color: #e4e4e4;
-                                        box-shadow: 0 0 1px 1px #039bd9;
-                                        color: #222;
+                                    select {
+                                        position: relative;
+                                        z-index: 1;
+                                        font-family: $pretendard;
+                                        font-weight: 400;
+                                        font-size: 1.6rem;
+                                        height: 100%;
+                                        padding: 1rem;
+                                        width: 100%;
+                                        -o-appearance: none;
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        appearance: none;
+                                        // background: url(../images/arrow.png) calc(100% - 1.5rem) center no-repeat #fff;
+                                        // background-size: 1.7rem 0.9rem;
+                                        border: 1px solid #e4e4e4;
                                         outline: none;
+                                        &:focus {
+                                            border-color: #e4e4e4;
+                                            box-shadow: 0 0 1px 1px #039bd9;
+                                            color: #222;
+                                            outline: none;
+                                            & + .arrow-icon {
+                                                img {
+                                                    transform: rotate(180deg);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .arrow-icon {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 1rem;
+                                        width: 1.7rem;
+                                        height: 100%;
+                                        @include flexbox(row, center,center);
+                                        z-index: 3;
+                                        img {
+                                            width: 100%;
+                                            transition: 0.3s;
+                                        }
                                     }
                                 }
                                 textarea {
                                     width: calc(100% - 3.4rem);
                                     height: calc(21.6rem - 3.4rem);
+                                    font-family: $pretendard;
+                                    font-weight: 400;
+                                    font-size: 1.6rem;
                                     margin: 0.7rem;
                                     border: 1px solid #e4e4e4;
                                     padding: 1rem;

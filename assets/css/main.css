@@ -4,8 +4,11 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: #f1f1f1;
 }
 
+/* font */
+/* color */
 .btn-wrap {
   width: 100%;
   padding-top: 1rem;
@@ -16,13 +19,21 @@ body {
   gap: 2.2rem;
 }
 .btn-wrap button {
-  background: transparent;
+  background: #fff;
   border: 1px solid #003b7e;
   border-radius: 0.4rem;
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  font-weight: 400;
   color: #003b7e;
   font-size: 1.6rem;
   padding: 0.9rem 5.7rem;
   cursor: pointer;
+}
+.btn-wrap button:hover {
+  background: #003b7e;
+  color: #fff;
+  transition: all 0.1s ease-in;
 }
 
 html {
@@ -31,8 +42,11 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: #f1f1f1;
 }
 
+/* font */
+/* color */
 .btn-wrap {
   width: 100%;
   padding-top: 1rem;
@@ -43,13 +57,21 @@ body {
   gap: 2.2rem;
 }
 .btn-wrap button {
-  background: transparent;
+  background: #fff;
   border: 1px solid #003b7e;
   border-radius: 0.4rem;
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  font-weight: 400;
   color: #003b7e;
   font-size: 1.6rem;
   padding: 0.9rem 5.7rem;
   cursor: pointer;
+}
+.btn-wrap button:hover {
+  background: #003b7e;
+  color: #fff;
+  transition: all 0.1s ease-in;
 }
 
 #header {
@@ -92,24 +114,37 @@ body {
   gap: 3rem;
 }
 #header .inner .gnb-area .gnb li {
-  position: relative;
   width: 14rem;
   text-align: center;
   line-height: 7.5rem;
+  transition: all 1s ease-in-out;
 }
-#header .inner .gnb-area .gnb li:hover::after {
+#header .inner .gnb-area .gnb li a {
+  position: relative;
+  width: 100%;
+  color: #222222;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+#header .inner .gnb-area .gnb li a::after {
   position: absolute;
   bottom: 0;
   left: 0;
   content: "";
-  display: inline-block;
-  width: 14rem;
+  display: block;
+  width: 0;
   height: 4px;
   background-color: #005c9e;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
-#header .inner .gnb-area .gnb li a {
-  color: #000;
-  font-size: 1.8rem;
+#header .inner .gnb-area .gnb li a:hover {
+  font-weight: 700;
+}
+#header .inner .gnb-area .gnb li a:hover::after {
+  opacity: 1;
+  width: 100%;
 }
 #header .inner .gnb-area .login {
   display: flex;
@@ -122,11 +157,17 @@ body {
   margin-right: 0.6rem;
 }
 #header .inner .gnb-area .login span {
+  font-family: "Pretendard";
+  font-weight: 400;
+  color: #222222;
   font-size: 1.4rem;
   margin-right: 2rem;
 }
 #header .inner .gnb-area .login button {
+  font-family: "Pretendard";
+  font-weight: 400;
   font-size: 1.4rem;
+  color: #b3b3b3;
   padding: 0.5rem 0.9rem;
   border-radius: 0.4rem;
   border: 1px solid #b3b3b3;
@@ -160,6 +201,8 @@ body {
 }
 #container #siteNav .nav-inner .nav-title span {
   padding-left: 2.2rem;
+  font-family: "Pretendard";
+  font-weight: 700;
   font-size: 2rem;
 }
 #container #siteNav .nav-inner .list {
@@ -180,8 +223,10 @@ body {
   align-items: center;
   gap: 0.7rem;
   margin-left: 2.5rem;
+  font-family: "Pretendard";
+  font-weight: 400;
   font-size: 1.6rem;
-  color: #000;
+  color: #222222;
 }
 #container #siteManage {
   width: 85%;
@@ -193,6 +238,8 @@ body {
   height: calc(100% - 4.7rem);
   margin: 2.5rem 2.5rem 2.2rem 0;
   background: #fff;
+  box-shadow: 0 5px 10px #d3d3d3;
+  border: 1px solid #e4e4e4;
 }
 #container #siteManage .menu-manage .title {
   width: calc(100% - 8rem);
@@ -201,7 +248,9 @@ body {
   border-bottom: 1px solid #e4e4e4;
 }
 #container #siteManage .menu-manage .title strong {
-  color: #000;
+  font-family: "Pretendard";
+  font-weight: 700;
+  color: #222222;
   font-size: 2.6rem;
   margin-left: 1rem;
 }
@@ -216,25 +265,73 @@ body {
 }
 #container #siteManage .menu-manage .menu-container .accordion-menu {
   width: 28%;
-  border: 1px solid #000;
-  background: skyblue;
 }
 #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner {
   width: 100%;
   border: 1px solid #b5b5b6;
-  background: pink;
+  min-height: 61.5rem;
+  background: #fff;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .contents {
-  display: none;
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list {
+  width: calc(100% - 2rem);
+  padding: 2.3rem 1rem;
+}
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-01 p {
+  width: calc(100% - 1.8rem);
+  padding-left: 1.8rem;
+}
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-02 p {
+  width: calc(100% - 3.6rem);
+  padding-left: 3.6rem;
+}
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-03 p {
+  width: calc(100% - 5.4rem);
+  padding-left: 5.4rem;
+}
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item p {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #222222;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+}
+#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item p:hover {
+  background: #f4f4f4;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
 }
 #container #siteManage .menu-manage .menu-container .menu-table {
   width: 72%;
-  background: #fff;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table {
+  font-family: "Pretendard";
+  color: #222222;
+  font-size: 1.6rem;
   width: 100%;
-  border-top: 1px solid #b5b5b6;
-  border-bottom: 1px solid #b5b5b6;
+  border-top: 2px solid #b5b5b6;
+  border-bottom: 2px solid #b5b5b6;
+  background: #fff;
+  min-height: 61.5rem;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr {
   border: 1px solid #e4e4e4;
@@ -244,8 +341,8 @@ body {
   height: 21.6rem;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr th {
+  font-weight: 700;
   background: #f3f5f8;
-  font-size: 1.6rem;
   text-align: left;
   vertical-align: middle;
   width: 16rem;
@@ -254,9 +351,13 @@ body {
   margin-left: 2rem;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td {
+  font-weight: 400;
   height: 100%;
 }
 #container #siteManage .menu-manage .menu-container .menu-table table tr td input {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
   width: 50%;
   height: calc(100% - 3.4rem);
   margin: 0.7rem;
@@ -269,29 +370,59 @@ body {
   color: #222;
   outline: none;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr td select {
+#container #siteManage .menu-manage .menu-container .menu-table table tr td .select-box {
+  position: relative;
+  width: 20rem;
   height: calc(100% - 1.4rem);
   margin: 0.7rem;
+}
+#container #siteManage .menu-manage .menu-container .menu-table table tr td .select-box select {
+  position: relative;
+  z-index: 1;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
+  height: 100%;
   padding: 1rem;
-  width: 20rem;
+  width: 100%;
   -o-appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(../images/arrow.png) calc(100% - 1.5rem) center no-repeat #fff;
-  background-size: 1.7rem 0.9rem;
   border: 1px solid #e4e4e4;
   outline: none;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr td select:focus {
+#container #siteManage .menu-manage .menu-container .menu-table table tr td .select-box select:focus {
   border-color: #e4e4e4;
   box-shadow: 0 0 1px 1px #039bd9;
   color: #222;
   outline: none;
 }
+#container #siteManage .menu-manage .menu-container .menu-table table tr td .select-box select:focus + .arrow-icon img {
+  transform: rotate(180deg);
+}
+#container #siteManage .menu-manage .menu-container .menu-table table tr td .select-box .arrow-icon {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 1.7rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+#container #siteManage .menu-manage .menu-container .menu-table table tr td .select-box .arrow-icon img {
+  width: 100%;
+  transition: 0.3s;
+}
 #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea {
   width: calc(100% - 3.4rem);
   height: 18.2rem;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 1.6rem;
   margin: 0.7rem;
   border: 1px solid #e4e4e4;
   padding: 1rem;

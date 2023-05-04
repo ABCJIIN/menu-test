@@ -22,7 +22,7 @@
                     <span>사이트 관리</span>
                 </div>
                 <ul class="list">
-                    <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">메뉴 관리</a></li>
+                    <li><a href="./index.html"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">메뉴 관리</a></li>
                     <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">관리자 메뉴 관리</a></li>
                     <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">메뉴별 접속통계</a></li>
                     <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">다운로드 트레킹</a></li>
@@ -39,11 +39,11 @@
                         <div class="accordion-inner">
                             <ul class="list">
                                 <li>
-                                    <div class="list-01"><p>ODA 오픈데이터포털</p></div>
-                                    <div class="list-01 contents"><p>국가별 개발협력 동향(사용)</p></div>
-                                    <div class="list-01 contents">
-                                        <p>국별개항(사용)</p>
-                                        <p>개발협력동향(사용)</p>
+                                    <div class="list-item item-01"><p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">ODA 오픈데이터포털</p></div>
+                                    <div class="list-item item-02 off"><p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">국가별 개발협력 동향(사용)</p></div>
+                                    <div class="list-item item-03 off">
+                                        <p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">국별개항(사용)</p>
+                                        <p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">개발협력동향(사용)</p>
                                     </div>
                                 </li>
                             </ul>
@@ -81,11 +81,14 @@
                             <tr>
                                 <th><label for="useNot">사용여부</label></th>
                                 <td>
-                                    <select id="useNot">
-                                        <option disabled selected hidden>선택</option>
-                                        <option>사용</option>
-                                        <option>중지</option>
-                                    </select>
+                                    <div class="select-box">
+                                        <select id="useNot">
+                                            <option disabled selected hidden>선택</option>
+                                            <option>사용</option>
+                                            <option>중지</option>
+                                        </select>
+                                        <span class="arrow-icon"><img src="./assets/images/arrow.png" alt="화살표 이미지"></span>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
