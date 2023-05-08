@@ -14,93 +14,95 @@
     <script src="./assets/js/main.js"></script>
 </head>
 <body>
-    <header id="header"></header>
-    <div id="container">
-        <nav id="siteNav">
-            <div class="nav-inner">
-                <div class="nav-title">
-                    <span>사이트 관리</span>
-                </div>
-                <ul class="list">
-                    <li class="on"><a href="./index.html"><img src="./assets/images/rectangle_select.png" alt="리스트 아이콘">메뉴 관리</a></li>
-                    <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">관리자 메뉴 관리</a></li>
-                    <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">메뉴별 접속통계</a></li>
-                    <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">다운로드 트레킹</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section id="siteManage">
-            <div class="menu-manage">
-                <div class="title">
-                    <strong>메뉴 관리</strong>
-                </div>
-                <div class="menu-container">
-                    <div class="accordion-menu">
-                        <div class="accordion-inner">
-                            <ul class="list">
-                                <li>
-                                    <div class="list-item item-01"><p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">ODA 오픈데이터포털</p></div>
-                                    <div class="list-item item-02 off"><p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">국가별 개발협력 동향(사용)</p></div>
-                                    <div class="list-item item-03 off">
-                                        <p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">국별개항(사용)</p>
-                                        <p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">개발협력동향(사용)</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="btn-wrap">
-                            <button type="button">메뉴등록</button>
-                        </div>
+    <div id="main">
+        <header id="header"></header>
+        <div id="container">
+            <nav id="siteNav">
+                <div class="nav-inner">
+                    <div class="nav-title">
+                        <span>사이트 관리</span>
                     </div>
-                    <form class="menu-table">
-                        <table>
-                            <tr>
-                                <th><label for="topMenu">상위메뉴명</label></th>
-                                <td><input type="text" id="topMenu"></td>
-                            </tr>
-                            <tr>
-                                <th><label for="topMenuCode">상위메뉴코드</label></th>
-                                <td><input type="text" id="topMenuCode"></td>
-                            </tr>
-                            <tr>
-                                <th><label for="menuName">메뉴명</label></th>
-                                <td><input type="text" id="menuName"></td>
-                            </tr>
-                            <tr>
-                                <th><label for="menuCode">메뉴코드</label></th>
-                                <td><input type="text" id="menuCode"></td>
-                            </tr>
-                            <tr>
-                                <th><label for="url">URL</label></th>
-                                <td><input type="url" id="url"></td>
-                            </tr>
-                            <tr>
-                                <th><label for="menuOrder">메뉴순서</label></th>
-                                <td><input type="text" id="menuOrder"></td>
-                            </tr>
-                            <tr>
-                                <th><label for="useNot">사용여부</label></th>
-                                <td>
-                                    <select id="useNot">
-                                        <option disabled selected hidden>선택</option>
-                                        <option>사용</option>
-                                        <option>중지</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><label for="selectScreen">해당화면</label></th>
-                                <td><textarea id="selectScreen"></textarea></td>
-                            </tr>
-                        </table>
-                        <div class="btn-wrap">
-                            <button type="submit">확인</button>
-                            <button type="reset">삭제</button>
-                        </div>
-                    </form>
+                    <ul class="list">
+                        <li class="on"><a href="./index.html"><img src="./assets/images/rectangle_select.png" alt="리스트 아이콘">메뉴 관리</a></li>
+                        <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">관리자 메뉴 관리</a></li>
+                        <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">메뉴별 접속통계</a></li>
+                        <li><a href="javascript:void(0)"><img src="./assets/images/rectangle.png" alt="리스트 아이콘">다운로드 트레킹</a></li>
+                    </ul>
                 </div>
-            </div>
-        </section>
+            </nav>
+            <section id="siteManage">
+                <div class="menu-manage">
+                    <div class="title">
+                        <strong>메뉴 관리</strong>
+                    </div>
+                    <div class="menu-container">
+                        <div class="accordion-menu">
+                            <div class="accordion-inner">
+                                <ul class="list">
+                                    <li>
+                                        <div class="list-item item-01"><p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">ODA 오픈데이터포털</p></div>
+                                        <div class="list-item item-02 off"><p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">국가별 개발협력 동향(사용)</p></div>
+                                        <div class="list-item item-03 off">
+                                            <p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">국별개항(사용)</p>
+                                            <p><img src="./assets/images/list_icon.png" alt="리스트 아이콘">개발협력동향(사용)</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrap">
+                                <button type="button">메뉴등록</button>
+                            </div>
+                        </div>
+                        <form class="menu-table">
+                            <table>
+                                <tr>
+                                    <th><label for="topMenu">상위메뉴명</label></th>
+                                    <td><input type="text" id="topMenu"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="topMenuCode">상위메뉴코드</label></th>
+                                    <td><input type="text" id="topMenuCode"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="menuName">메뉴명</label></th>
+                                    <td><input type="text" id="menuName"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="menuCode">메뉴코드</label></th>
+                                    <td><input type="text" id="menuCode"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="url">URL</label></th>
+                                    <td><input type="url" id="url"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="menuOrder">메뉴순서</label></th>
+                                    <td><input type="text" id="menuOrder"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="useNot">사용여부</label></th>
+                                    <td>
+                                        <select id="useNot">
+                                            <option disabled selected hidden>선택</option>
+                                            <option>사용</option>
+                                            <option>중지</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><label for="selectScreen">해당화면</label></th>
+                                    <td><textarea id="selectScreen"></textarea></td>
+                                </tr>
+                            </table>
+                            <div class="btn-wrap">
+                                <button type="submit">확인</button>
+                                <button type="reset">삭제</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 </html>

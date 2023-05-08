@@ -71,15 +71,12 @@ body {
 }
 
 caption {
-  overflow: hidden;
-  border: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  display: inline-block;
-  z-index: -5;
+  margin: -1px;
+  overflow: hidden;
 }
 
 .btn-wrap {
@@ -251,15 +248,12 @@ body {
 }
 
 caption {
-  overflow: hidden;
-  border: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  display: inline-block;
-  z-index: -5;
+  margin: -1px;
+  overflow: hidden;
 }
 
 .btn-wrap {
@@ -459,33 +453,33 @@ td select:focus {
   cursor: pointer;
 }
 
-#container #siteManage {
+#main #container #siteManage {
   width: 85%;
-  height: calc(100vh - 7.5rem);
   background: #f1f1f1;
 }
-#container #siteManage .menu-manage {
+#main #container #siteManage .menu-manage {
   width: calc(100% - 2.5rem);
-  height: calc(100% - 5.2rem);
+  min-height: calc(100vh - 14.7rem);
   margin: 2.5rem 2.5rem 2.5rem 0;
   background: #fff;
   box-shadow: 0 5px 10px #d3d3d3;
   border: 1px solid #e4e4e4;
+  padding-bottom: 2rem;
 }
-#container #siteManage .menu-manage .title {
+#main #container #siteManage .menu-manage .title {
   width: calc(100% - 8rem);
   margin: 0 4rem;
   padding: 2rem 0 2.5rem 0;
   border-bottom: 1px solid #e4e4e4;
 }
-#container #siteManage .menu-manage .title strong {
+#main #container #siteManage .menu-manage .title strong {
   font-family: "Pretendard";
   font-weight: 700;
   color: #222222;
   font-size: 2.6rem;
   margin-left: 1rem;
 }
-#container #siteManage .menu-manage .menu-container {
+#main #container #siteManage .menu-manage .menu-container {
   width: calc(100% - 8rem);
   margin: 2rem 4rem 0 4rem;
   display: flex;
@@ -494,49 +488,49 @@ td select:focus {
   align-items: flex-start;
   gap: 4rem;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu {
   width: 28%;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner {
   width: 100%;
   border: 1px solid #b5b5b6;
   min-height: 61.5rem;
   background: #fff;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list {
   width: calc(100% - 2rem);
   padding: 2.3rem 1rem;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.off {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.off {
   display: none;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-01 p {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-01 p {
   width: calc(100% - 1.8rem);
   padding-left: 1.8rem;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-02 p {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-02 p {
   width: calc(100% - 3.6rem);
   padding-left: 3.6rem;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-03 p {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item.item-03 p {
   width: calc(100% - 5.4rem);
   padding-left: 5.4rem;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item p {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item p {
   width: 100%;
   padding: 0.5rem 0;
   font-family: "Pretendard";
@@ -549,15 +543,15 @@ td select:focus {
   align-items: center;
   gap: 1.2rem;
 }
-#container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item p:hover {
+#main #container #siteManage .menu-manage .menu-container .accordion-menu .accordion-inner .list li .list-item p:hover {
   background: #f4f4f4;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
 }
-#container #siteManage .menu-manage .menu-container .menu-table {
+#main #container #siteManage .menu-manage .menu-container .menu-table {
   width: 72%;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table {
+#main #container #siteManage .menu-manage .menu-container .menu-table table {
   font-family: "Pretendard";
   color: #222222;
   font-size: 1.6rem;
@@ -567,28 +561,28 @@ td select:focus {
   background: #fff;
   min-height: 61.5rem;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr {
   border: 1px solid #e4e4e4;
   height: 5.2rem;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr:last-child th {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr:last-child th {
   height: 21.6rem;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr th {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr th {
   font-weight: 700;
   background: #f3f5f8;
   text-align: left;
   vertical-align: middle;
   width: 16rem;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr th label {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr th label {
   margin-left: 2rem;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr td {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr td {
   font-weight: 400;
   height: 100%;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr td textarea {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea {
   width: calc(100% - 3.4rem);
   height: 18.2rem;
   font-family: "Pretendard";
@@ -599,20 +593,20 @@ td select:focus {
   padding: 1rem;
   resize: none;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr td textarea:focus {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea:focus {
   border-color: #e4e4e4;
   box-shadow: 0 0 1px 1px #000;
   color: #222;
   outline: none;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar {
   width: 8px;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar-track {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar-track {
   background-color: #fff;
   border-radius: 10px;
 }
-#container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar-thumb {
+#main #container #siteManage .menu-manage .menu-container .menu-table table tr td textarea::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #e4e4e4;
 }

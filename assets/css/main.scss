@@ -1,151 +1,153 @@
 @import "./common/common";
 @import "./common/layout";
 
-#container {    
-    #siteManage {
-        width: 85%;
-        height: calc(100vh - 7.5rem);
-        background: #f1f1f1;
-        .menu-manage {
-            width: calc(100% - 2.5rem);
-            height: calc(100% - 5.2rem);
-            margin: 2.5rem 2.5rem 2.5rem 0;
-            background: #fff;
-            box-shadow: 0 5px 10px #d3d3d3;
-            border: 1px solid #e4e4e4;
-            .title {
-                width: calc(100% - 8rem);
-                margin: 0 4rem;
-                padding: 2rem 0 2.5rem 0;
-                border-bottom: 1px solid #e4e4e4;
-                strong {
-                    font-family: $pretendard;
-                    font-weight: 700;
-                    color: $black;
-                    font-size: 2.6rem;
-                    margin-left: 1rem;
+#main {
+    #container {    
+        #siteManage {
+            width: 85%;
+            background: #f1f1f1;
+            .menu-manage {
+                width: calc(100% - 2.5rem);
+                min-height: calc(100vh - 14.7rem);
+                margin: 2.5rem 2.5rem 2.5rem 0;
+                background: #fff;
+                box-shadow: 0 5px 10px #d3d3d3;
+                border: 1px solid #e4e4e4;
+                padding-bottom: 2rem;
+                .title {
+                    width: calc(100% - 8rem);
+                    margin: 0 4rem;
+                    padding: 2rem 0 2.5rem 0;
+                    border-bottom: 1px solid #e4e4e4;
+                    strong {
+                        font-family: $pretendard;
+                        font-weight: 700;
+                        color: $black;
+                        font-size: 2.6rem;
+                        margin-left: 1rem;
+                    }
                 }
-            }
-            .menu-container {
-                width: calc(100% - 8rem);
-                margin: 2rem 4rem 0 4rem;
-                @include flexbox(row, flex-start, flex-start);
-                gap: 4rem;
-                .accordion-menu {
-                    width: 28%;
-                    .accordion-inner {
-                        width: 100%;
-                        border: 1px solid #b5b5b6;
-                        min-height: 61.5rem;
-                        background: #fff;
-                        .list {
-                            width: calc(100% - 2rem);
-                            padding: 2.3rem 1rem;
-                            li {
-                                width: 100%;
-                                @include flexbox(column, flex-start,flex-start);
-                                .list-item {
+                .menu-container {
+                    width: calc(100% - 8rem);
+                    margin: 2rem 4rem 0 4rem;
+                    @include flexbox(row, flex-start, flex-start);
+                    gap: 4rem;
+                    .accordion-menu {
+                        width: 28%;
+                        .accordion-inner {
+                            width: 100%;
+                            border: 1px solid #b5b5b6;
+                            min-height: 61.5rem;
+                            background: #fff;
+                            .list {
+                                width: calc(100% - 2rem);
+                                padding: 2.3rem 1rem;
+                                li {
                                     width: 100%;
                                     @include flexbox(column, flex-start,flex-start);
-                                    &.off {
-                                        display: none;
-                                    }
-                                    &.item-01 {
-                                        p {
-                                            width: calc(100% - 1.8rem);
-                                            padding-left: 1.8rem;
-                                        }
-                                    }
-                                    &.item-02 {
-                                        p {
-                                            width: calc(100% - 3.6rem);
-                                            padding-left: 3.6rem;
-                                        }
-                                    }
-                                    &.item-03 {
-                                        p {
-                                            width: calc(100% - 5.4rem);
-                                            padding-left: 5.4rem;
-                                        }
-                                    }
-                                    p {
+                                    .list-item {
                                         width: 100%;
-                                        padding: 0.5rem 0;
-                                        font-family: $pretendard;
-                                        font-weight: 400;
-                                        font-size: 1.6rem;
-                                        color: $black;
-                                        @include flexbox(row,flex-start,center);
-                                        gap: 1.2rem;
-                                        &:hover {
-                                            background: #f4f4f4;
-                                            font-weight: 700;
-                                            transition: all 0.2s ease-in-out;
+                                        @include flexbox(column, flex-start,flex-start);
+                                        &.off {
+                                            display: none;
+                                        }
+                                        &.item-01 {
+                                            p {
+                                                width: calc(100% - 1.8rem);
+                                                padding-left: 1.8rem;
+                                            }
+                                        }
+                                        &.item-02 {
+                                            p {
+                                                width: calc(100% - 3.6rem);
+                                                padding-left: 3.6rem;
+                                            }
+                                        }
+                                        &.item-03 {
+                                            p {
+                                                width: calc(100% - 5.4rem);
+                                                padding-left: 5.4rem;
+                                            }
+                                        }
+                                        p {
+                                            width: 100%;
+                                            padding: 0.5rem 0;
+                                            font-family: $pretendard;
+                                            font-weight: 400;
+                                            font-size: 1.6rem;
+                                            color: $black;
+                                            @include flexbox(row,flex-start,center);
+                                            gap: 1.2rem;
+                                            &:hover {
+                                                background: #f4f4f4;
+                                                font-weight: 700;
+                                                transition: all 0.2s ease-in-out;
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                }
-                .menu-table {
-                    width: 72%;
-                    table {
-                        font-family: $pretendard;
-                        color: $black;
-                        font-size: 1.6rem;
-                        width: 100%;
-                        border-top: 2px solid #b5b5b6;
-                        border-bottom: 2px solid #b5b5b6;
-                        background: #fff;
-                        min-height: 61.5rem;
-                        tr {
-                            border: 1px solid #e4e4e4;
-                            height: 5.2rem;
-                            &:last-child {
+                    .menu-table {
+                        width: 72%;
+                        table {
+                            font-family: $pretendard;
+                            color: $black;
+                            font-size: 1.6rem;
+                            width: 100%;
+                            border-top: 2px solid #b5b5b6;
+                            border-bottom: 2px solid #b5b5b6;
+                            background: #fff;
+                            min-height: 61.5rem;
+                            tr {
+                                border: 1px solid #e4e4e4;
+                                height: 5.2rem;
+                                &:last-child {
+                                    th {
+                                        height: 21.6rem;
+                                    }
+                                }
                                 th {
-                                    height: 21.6rem;
+                                    font-weight: 700;
+                                    background: #f3f5f8;
+                                    text-align: left;
+                                    vertical-align: middle;
+                                    width: 16rem;
+                                    label {
+                                        margin-left: 2rem;
+                                    }
                                 }
-                            }
-                            th {
-                                font-weight: 700;
-                                background: #f3f5f8;
-                                text-align: left;
-                                vertical-align: middle;
-                                width: 16rem;
-                                label {
-                                    margin-left: 2rem;
-                                }
-                            }
-                            td {
-                                font-weight: 400;
-                                height: 100%;
-                                textarea {
-                                    width: calc(100% - 3.4rem);
-                                    height: calc(21.6rem - 3.4rem);
-                                    font-family: $pretendard;
+                                td {
                                     font-weight: 400;
-                                    font-size: 1.6rem;
-                                    margin: 0.7rem;
-                                    border: 1px solid #e4e4e4;
-                                    padding: 1rem;
-                                    resize: none;
-                                    &:focus {
-                                        border-color: #e4e4e4;
-                                        box-shadow: 0 0 1px 1px #000;
-                                        color: #222;
-                                        outline: none;
-                                    }
-                                    &::-webkit-scrollbar {
-                                        width: 8px;
-                                    }
-                                    &::-webkit-scrollbar-track {
-                                        background-color: #fff;
-                                        border-radius: 10px;
-                                    }
-                                    &::-webkit-scrollbar-thumb {
-                                        border-radius: 10px;
-                                        background-color: #e4e4e4;
+                                    height: 100%;
+                                    textarea {
+                                        width: calc(100% - 3.4rem);
+                                        height: calc(21.6rem - 3.4rem);
+                                        font-family: $pretendard;
+                                        font-weight: 400;
+                                        font-size: 1.6rem;
+                                        margin: 0.7rem;
+                                        border: 1px solid #e4e4e4;
+                                        padding: 1rem;
+                                        resize: none;
+                                        &:focus {
+                                            border-color: #e4e4e4;
+                                            box-shadow: 0 0 1px 1px #000;
+                                            color: #222;
+                                            outline: none;
+                                        }
+                                        &::-webkit-scrollbar {
+                                            width: 8px;
+                                        }
+                                        &::-webkit-scrollbar-track {
+                                            background-color: #fff;
+                                            border-radius: 10px;
+                                        }
+                                        &::-webkit-scrollbar-thumb {
+                                            border-radius: 10px;
+                                            background-color: #e4e4e4;
+                                        }
                                     }
                                 }
                             }

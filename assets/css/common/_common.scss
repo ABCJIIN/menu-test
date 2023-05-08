@@ -81,14 +81,12 @@ $black: #222222;
 }
 
 caption {
-    overflow: hidden;
-    border: 0;
+    position: absolute;
+    clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    display: inline-block;
-    z-index: -5;
+    margin: -1px;
+    overflow: hidden;
 }
 
 .btn-wrap {

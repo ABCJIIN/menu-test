@@ -1,160 +1,164 @@
 @import "./common/common";
 @import "./common/layout";
 
-#container {
-    #odaInform {
-        width: 85%;
-        height: calc(100vh - 7.5rem);
-        background: #f1f1f1;
-        .office-data {
-            width: calc(100% - 2.5rem);
-            height: calc(100% - 5.2rem);
-            margin: 2.5rem 2.5rem 2.5rem 0;
-            background: #fff;
-            box-shadow: 0 5px 10px #d3d3d3;
-            border: 1px solid #e4e4e4;
-            .title {
-                width: calc(100% - 8rem);
-                margin: 0 4rem;
-                padding: 2rem 0 2.5rem 0;
-                border-bottom: 1px solid #e4e4e4;
-                strong {
-                    font-family: $pretendard;
-                    font-weight: 700;
-                    color: $black;
-                    font-size: 2.6rem;
-                    margin-left: 1rem;
+#main {
+    #container {
+        #odaInform {
+            width: 85%;
+            background: #f1f1f1;
+            .office-data {
+                width: calc(100% - 2.5rem);
+                min-height: calc(100vh - 14.7rem);
+                margin: 2.5rem 2.5rem 2.5rem 0;
+                background: #fff;
+                box-shadow: 0 5px 10px #d3d3d3;
+                border: 1px solid #e4e4e4;
+                padding-bottom: 2rem;
+                .title {
+                    width: calc(100% - 8rem);
+                    margin: 0 4rem;
+                    padding: 2rem 0 2.5rem 0;
+                    border-bottom: 1px solid #e4e4e4;
+                    strong {
+                        font-family: $pretendard;
+                        font-weight: 700;
+                        color: $black;
+                        font-size: 2.6rem;
+                        margin-left: 1rem;
+                    }
                 }
-            }
-            .search {
-                width: calc(100% - 8rem);
-                margin: 2rem 4rem;
-                border-top: 1px solid #767676;
-                border-bottom: 1px solid #767676;
-                border-left: 1px solid #e4e4e4;
-                border-right: 1px solid #e4e4e4;
-                @include flexbox(row, space-between, center);
-                .search-tb {
-                    width: calc(100% - 18.7rem);
-                    height: 100%;
+                .search {
+                    width: calc(100% - 8rem);
+                    margin: 2rem 4rem;
+                    border-top: 1px solid #767676;
+                    border-bottom: 1px solid #767676;
+                    border-left: 1px solid #e4e4e4;
                     border-right: 1px solid #e4e4e4;
-                    @include flexbox(row, flex-start, center);
-                    tbody {
-                        width: 100%;
-                        tr {
-                            width: 100%;
-                            height: 5rem;
-                            line-height: 5rem;
-                            th {
-                                @include flexbox(row, flex-start, center);
-                                width: 12rem;
-                                background: #f3f5f8;
-                                font-size: 1.6rem;
-                                font-weight: 700;
-                                font-family: $pretendard;
-                                color: $black;
-                                label {
-                                    margin-left: 2.2rem;
+                    @include flexbox(row, space-between, center);
+                    .search-tb {
+                        width: calc(100% - 18.7rem);
+                        border-right: 1px solid #e4e4e4;
+                        tbody {
+                            tr {
+                                th {
+                                    width: 12rem;
+                                    background: #f3f5f8;
+                                    font-family: $pretendard;
+                                    font-size: 1.6rem;
+                                    font-weight: 700;
+                                    color: $black;
+                                    text-align: left;
+                                    label {
+                                        margin-left: 2.2rem;
+                                    }
                                 }
-                            }
-                            td {
-                                width: 50%;
-                                background: #fff;
-                                input {
-                                    width: 80%;
+                                td {
+                                    background: #fff;
+                                    input {
+                                        width: 80%;
+                                    }
                                 }
                             }
                         }
                     }
+                    .btn-wrap {
+                        padding: 0 2rem;
+                    }
                 }
-                .btn-wrap {
-                    padding: 0 2rem;
-                    height: 100%;
-                }
-            }
-            .result {
-                width: calc(100% - 8rem);
-                margin: 0 4rem;
-                padding-top: 2rem;
-                span {
-                    font-family: $pretendard;
-                    font-size: 1.6rem;
-                    font-weight: 700;
-                    color: $black;
-                }
-                .result-tb {
-                    width: 100%;
-                    margin-top: 0.8rem;
-                    border-top: 2px solid #b5b5b6;
-                    border-bottom: 2px solid #b5b5b6;
-                    tr {
-                        &:nth-child(1) {
-                            border-bottom: 2px solid #b5b5b6;
-                        }
-                        th {
+                .result {
+                    width: calc(100% - 8rem);
+                    margin: 0 4rem;
+                    padding-top: 2rem;
+                    span {
+                        font-family: $pretendard;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        color: $black;
+                    }
+                    .result-tb {
+                        width: 100%;
+                        margin-top: 0.8rem;
+                        border-top:  1px solid #b5b5b6;
+                        border-bottom:  1px solid #b5b5b6;
+                        thead {
                             height: 6rem;
-                            vertical-align: middle;
                             background: #f3f5f8;
-                            font-family: $pretendard;
-                            font-size: 1.6rem;
-                            font-weight: 700;
-                            color: $black;
-                        }
-                        td {
-                            height: 4rem;
-                            vertical-align: middle;
-                            text-align: center;
-                            border: 1.3px solid #f4f4f4;
-                            font-family: $pretendard;
-                            font-size: 1.6rem;
-                            font-weight: 400;
-                            color: $black;
-                            &:nth-child(2) {
-                                text-align: left;
-                                a {
-                                    margin-left: 1.1rem;
-                                    width: 100%;
+                            border-bottom:  1px solid #b5b5b6;
+                            tr {
+                                th {
+                                    vertical-align: middle;
+                                    font-family: $pretendard;
+                                    font-size: 1.6rem;
+                                    font-weight: 700;
                                     color: $black;
                                 }
                             }
                         }
+                        tbody {
+                            background: #fff;
+                            tr {
+                                &:last-child {
+                                    td {
+                                        border-bottom: 1px solid #b5b5b6;
+                                    }
+                                }
+                                td {
+                                    border: 1px solid #f4f4f4;
+                                    height: 4rem;
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    font-family: $pretendard;
+                                    font-size: 1.6rem;
+                                    font-weight: 400;
+                                    color: $black;
+                                    &:nth-child(2) {
+                                        text-align: left;
+                                        a {
+                                            margin-left: 1.1rem;
+                                            width: 100%;
+                                            color: $black;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-            }
-            .page {
-                width: 100%;
-                @include flexbox(row,center,center);
-                ul {
-                    @include flexbox(row, center, center);
-                    gap: 1rem;
-                    padding: 0 3.2rem;
-                    li {
-                        width: 2rem;
-                        text-align: center;
-                        a {
-                            position: relative;
-                            font-family: $pretendard;
-                            font-weight: 400;
-                            color: #767676;
-                            font-size: 1.8rem;
-                            &::after {
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                content: '';
-                                display: block;
-                                width: 0;
-                                height: 1px;
-                                background: #003b7e;
-                                opacity: 0;
-                                transition: all 0.2s ease-in-out;
-                            }
-                            &:hover {
-                                font-weight: 700;
-                                color: #003b7e;
+                .page {
+                    width: 100%;
+                    @include flexbox(row,center,center);
+                    ul {
+                        @include flexbox(row, center, center);
+                        gap: 1rem;
+                        padding: 0 3.2rem;
+                        li {
+                            width: 2rem;
+                            text-align: center;
+                            a {
+                                position: relative;
+                                font-family: $pretendard;
+                                font-weight: 400;
+                                color: #767676;
+                                font-size: 1.8rem;
                                 &::after {
-                                    opacity: 1;
-                                    width: 100%;
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    content: '';
+                                    display: block;
+                                    width: 0;
+                                    height: 1px;
+                                    background: #003b7e;
+                                    opacity: 0;
+                                    transition: all 0.2s ease-in-out;
+                                }
+                                &:hover {
+                                    font-weight: 700;
+                                    color: #003b7e;
+                                    &::after {
+                                        opacity: 1;
+                                        width: 100%;
+                                    }
                                 }
                             }
                         }
