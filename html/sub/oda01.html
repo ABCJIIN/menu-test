@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODA정보</title>
+        <!-- CDN -->
+        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <!-- datepicker -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- 로컬소스 -->
+        <link href="../../assets/css/reset.css" rel="stylesheet">
+        <link href="../../assets/css/sub.css" rel="stylesheet">
+        <script src="../../assets/js/include.js"></script>
+        <script src="../../assets/js/sub.js"></script>
+</head>
+<body>
+    <div id="main">
+        <header id="header"></header>
+        <div id="container">
+            <nav id="siteNav">
+                <div class="nav-inner">
+                    <div class="nav-title">
+                        <span>ODA정보</span>
+                    </div>
+                    <ul class="list">
+                        <li class="on"><a href="../sub/oda01.html"><img src="../../assets/images/rectangle.png" alt="리스트 아이콘">국제개발동향관리</a></li>
+                        <li><a href="javascript:void(0)"><img src="../../assets/images/rectangle.png" alt="리스트 아이콘">국제개발동향 대시보드</a></li>
+                        <li><a href="javascript:void(0)"><img src="../../assets/images/rectangle.png" alt="리스트 아이콘">정보공개관리</a></li>
+                        <li><a href="javascript:void(0)"><img src="../../assets/images/rectangle.png" alt="리스트 아이콘">용어집</a></li>
+                        <li><a href="javascript:void(0)"><img src="../../assets/images/rectangle.png" alt="리스트 아이콘">통계연보</a></li>
+                        <li><a href="../sub/oda06.html"><img src="../../assets/images/rectangle_select.png" alt="리스트 아이콘">사무소 자료</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section id="odaInform">
+                <div class="office-data">
+                    <div class="title">
+                        <strong>국제개발협력동향</strong>
+                    </div>
+                    <div class="search-01">
+                        <table>
+                            <caption>리스트</caption>
+                            <colgroup>
+                            <col width="10%" />
+                            <col width="45%" />
+                            <col width="10%" />
+                            <col width="35%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><label for="title">제목</label></th>
+                                    <td><input type="text" id="title"></td>
+                                    <th><label for="date">등록일</label></th>
+                                    <td>
+                                        <input type="text" id="datepicker01"> ~
+                                        <input type="text" id="datepicker02">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><label for="division">구분</label></th>
+                                    <td>
+                                        <select id="division">
+                                            <option selected disabled hidden>전체</option>
+                                            <option>하나</option>
+                                            <option>둘</option>
+                                            <option>셋</option>
+                                        </select>
+                                    </td>
+                                    <th><label for="field">분야</label></th>
+                                    <td>
+                                        <select id="field">
+                                            <option selected disabled hidden>전체</option>
+                                            <option>하나</option>
+                                            <option>둘</option>
+                                            <option>셋</option>
+                                        </select>
+                                        <select>
+                                            <option selected disabled hidden>전체</option>
+                                            <option>하나</option>
+                                            <option>둘</option>
+                                            <option>셋</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><label for="nation">대륙/국가</label></th>
+                                    <td colspan="3">
+                                        <select id="nation">
+                                            <option selected disabled hidden>전체</option>
+                                            <option>하나</option>
+                                            <option>둘</option>
+                                            <option>셋</option>
+                                        </select>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn-wrap">
+                            <button>검색</button>
+                            <button>조건초기화</button>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <span>총:124건</span>
+                        <table class="result-tb">
+                            <caption>리스트</caption>
+                            <colgroup>
+                                <col width="7%"/>
+                                <col width="53%"/>
+                                <col width="10%"/>
+                                <col width="10%"/>
+                                <col width="10%"/>
+                                <col width="10%"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>제목</th>
+                                    <th>사업소</th>
+                                    <th>첨부파일</th>
+                                    <th>등록일</th>
+                                    <th>조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소1자료입니다.</a></td>
+                                    <td>사업소1</td>
+                                    <td><img src="../../assets/images/file_icon.png" alt="파일 아이콘"></td>
+                                    <td>2022.07.14</td>
+                                    <td>189</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소2자료입니다.</a></td>
+                                    <td>사업소2</td>
+                                    <td><img src="../../assets/images/file_icon.png" alt="파일 아이콘"></td>
+                                    <td>2022.07.14</td>
+                                    <td>714</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소3자료입니다.</a></td>
+                                    <td>사업소3</td>
+                                    <td><img src="../../assets/images/file_icon.png" alt="파일 아이콘"></td>
+                                    <td>2022.07.14</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소4자료입니다.</a></td>
+                                    <td>사업소4</td>
+                                    <td></td>
+                                    <td>2022.07.14</td>
+                                    <td>64</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소5자료입니다.</a></td>
+                                    <td>사업소5</td>
+                                    <td><img src="../../assets/images/file_icon.png" alt="파일 아이콘"></td>
+                                    <td>2022.07.14</td>
+                                    <td>201</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소6자료입니다.</a></td>
+                                    <td>사업소6</td>
+                                    <td><img src="../../assets/images/file_icon.png" alt="파일 아이콘"></td>
+                                    <td>2022.07.14</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소7자료입니다.</a></td>
+                                    <td>사업소7</td>
+                                    <td><img src="../../assets/images/file_icon.png" alt="파일 아이콘"></td>
+                                    <td>2022.07.14</td>
+                                    <td>556</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소8자료입니다.</a></td>
+                                    <td>사업소8</td>
+                                    <td></td>
+                                    <td>2022.07.14</td>
+                                    <td>752</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소9자료입니다.</a></td>
+                                    <td>사업소9</td>
+                                    <td><img src="../../assets/images/file_icon.png" alt="파일 아이콘"></td>
+                                    <td>2022.07.14</td>
+                                    <td>42</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td><a href="javascript:void(0)">2022년 사무소10자료입니다.</a></td>
+                                    <td>사업소10</td>
+                                    <td><img src="../../assets/images/file_icon.png" alt="파일 아이콘"></td>
+                                    <td>2022.07.14</td>
+                                    <td>96</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn-wrap">
+                            <button type="button">등록</button>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="btn-wrap">
+                            <button type="button"><img src="../../assets/images/first_arrow.png" alt="첫 페이지 버튼"></button>
+                            <button type="button"><img src="../../assets/images/prev_arrow.png" alt="이전 버튼"></button>
+                        </div>
+                        <ul>
+                            <li><a href="javascript:void(0)">1</a></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                            <li><a href="javascript:void(0)">4</a></li>
+                            <li><a href="javascript:void(0)">5</a></li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <button type="button"><img src="../../assets/images/next_arrow.png" alt="다음 버튼"></button>
+                            <button type="button"><img src="../../assets/images/end_arrow.png" alt="마지막 페이지 버튼"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -175,6 +175,12 @@ td select:focus {
   outline: none;
 }
 
+#datepicker01, #datepicker02 {
+  background: url("../../../assets/images/calendar.png") no-repeat 95%;
+  background-size: 2.2rem;
+  cursor: pointer;
+}
+
 html {
   font-size: 10px;
 }
@@ -350,6 +356,12 @@ td select:focus {
   box-shadow: 0 0 1px 1px #039bd9;
   color: #222;
   outline: none;
+}
+
+#datepicker01, #datepicker02 {
+  background: url("../../../assets/images/calendar.png") no-repeat 95%;
+  background-size: 2.2rem;
+  cursor: pointer;
 }
 
 #header {
