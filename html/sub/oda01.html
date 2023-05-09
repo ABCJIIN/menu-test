@@ -78,7 +78,7 @@
                                             <option>둘</option>
                                             <option>셋</option>
                                         </select>
-                                        <select>
+                                        <select id="field">
                                             <option selected disabled hidden>전체</option>
                                             <option>하나</option>
                                             <option>둘</option>
@@ -121,7 +121,8 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th>
+                                    <th class="border-top-left">
+                                        <label for="chkAll" class="hidden"></label>
                                         <input type="checkbox" id="chkAll" />
                                     </th>
                                     <th>No.</th>
@@ -131,13 +132,14 @@
                                     <th>방역로봇</th>
                                     <th>서빙로봇</th>
                                     <th>호텔로봇</th>
-                                    <th>노출 설정</th>
+                                    <th class="border-top-right">노출 설정</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="bg-on">
                                     <td rowspan="2">
-                                        <input type="checkbox" name="chkBox" />
+                                        <label for="chkBox01" class="hidden"></label>
+                                        <input type="checkbox" name="chkBox" id="chkBox01" />
                                     </td>
                                     <td rowspan="2">25</td>
                                     <td>황소포차</td>
@@ -151,8 +153,8 @@
                                             <input type="radio" name="expose01" id="expose01">노출
                                         </label>
                                         <br>
-                                        <label for="expose01" class="expose">
-                                            <input type="radio" name="expose01" id="expose01">미노출
+                                        <label for="notExpose01" class="expose">
+                                            <input type="radio" name="expose01" id="notExpose01">미노출
                                         </label>
                                     </td>
                                 </tr>
@@ -162,7 +164,8 @@
                                 </tr>
                                 <tr>
                                     <td rowspan="2">
-                                        <input type="checkbox" name="chkBox" />
+                                        <label for="chkBox02" class="hidden"></label>
+                                        <input type="checkbox" name="chkBox" id="chkBox02" />
                                     </td>
                                     <td rowspan="2">25</td>
                                     <td>황소포차</td>
@@ -176,8 +179,8 @@
                                             <input type="radio" name="expose02" id="expose02">노출
                                         </label>
                                         <br>
-                                        <label for="expose02" class="expose">
-                                            <input type="radio" name="expose02" id="expose02">미노출
+                                        <label for="notExpose02" class="expose">
+                                            <input type="radio" name="expose02" id="notExpose02">미노출
                                         </label>
                                     </td>
                                 </tr>
@@ -186,8 +189,9 @@
                                     <td>12,Jongno-ro,Jongno-gu,Seoul</td>
                                 </tr>
                                 <tr class="bg-on">
-                                    <td rowspan="2">
-                                        <input type="checkbox" name="chkBox" />
+                                    <td rowspan="2" class="border-bottom-left">
+                                        <label for="chkBox03" class="hidden"></label>
+                                        <input type="checkbox" name="chkBox" id="chkBox03"/>
                                     </td>
                                     <td rowspan="2">25</td>
                                     <td>황소포차</td>
@@ -196,13 +200,13 @@
                                     <td rowspan="2">0대</td>
                                     <td rowspan="2">1대</td>
                                     <td rowspan="2">0대</td>
-                                    <td rowspan="2">
+                                    <td rowspan="2" class="border-bottom-right">
                                         <label for="expose03" class="expose">
                                             <input type="radio" name="expose03" id="expose03">노출
                                         </label>
                                         <br>
-                                        <label for="expose03" class="expose">
-                                            <input type="radio" name="expose03" id="expose03">미노출
+                                        <label for="notExpose03" class="expose">
+                                            <input type="radio" name="expose03" id="notExpose03">미노출
                                         </label>
                                     </td>
                                 </tr>

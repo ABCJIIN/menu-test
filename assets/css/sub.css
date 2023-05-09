@@ -79,6 +79,31 @@ caption {
   overflow: hidden;
 }
 
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.border-top-left {
+  border-radius: 10px 0 0 0;
+}
+
+.border-top-right {
+  border-radius: 0 10px 0 0;
+}
+
+.border-bottom-right {
+  border-radius: 0 0 10px 0;
+}
+
+.border-bottom-left {
+  border-radius: 0 0 0 10px;
+}
+
 .btn-wrap {
   padding-top: 1rem;
   display: flex;
@@ -272,6 +297,31 @@ caption {
   height: 1px;
   margin: -1px;
   overflow: hidden;
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.border-top-left {
+  border-radius: 10px 0 0 0;
+}
+
+.border-top-right {
+  border-radius: 0 10px 0 0;
+}
+
+.border-bottom-right {
+  border-radius: 0 0 10px 0;
+}
+
+.border-bottom-left {
+  border-radius: 0 0 0 10px;
 }
 
 .btn-wrap {
@@ -626,13 +676,15 @@ td select:focus {
 }
 #main #container #odaInform .office-data .result-01 {
   width: calc(100% - 8rem);
-  margin: 0 4rem;
+  margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
 #main #container #odaInform .office-data .result-01 table {
   width: 100%;
-  border: 1px solid #BBBBBB;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
 }
 #main #container #odaInform .office-data .result-01 table thead {
   background: #005c9e;
