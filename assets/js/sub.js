@@ -1,4 +1,6 @@
-  $.datepicker.setDefaults({
+
+//달력
+$.datepicker.setDefaults({
     dateFormat: 'yy-mm',
     prevText: '이전 달',
     nextText: '다음 달',
@@ -20,3 +22,19 @@
     });
     
   });
+
+//체크박스
+$(document).ready(function() {
+	$("#chkAll").click(function() {
+		if($("#chkAll").is(":checked")) $("input[name=chkBox]").prop("checked", true);
+		else $("input[name=chkBox]").prop("checked", false);
+	});
+
+	$("input[name=chkBox]").click(function() {
+		var total = $("input[name=chkBox]").length;
+		var checked = $("input[name=chkBox]:checked").length;
+
+		if(total != checked) $("#chkAll").prop("checked", false);
+		else $("#chkAll").prop("checked", true); 
+	});
+});

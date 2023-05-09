@@ -43,7 +43,16 @@
                                 &:first-child {
                                     td {
                                         &:nth-of-type(2) {
-                                            @include flexbox(row, center, center);
+                                            @include flexbox(row, flex-start, center);
+                                            width: 80%;
+                                        }
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    td {
+                                        &:nth-of-type(2) {
+                                            @include flexbox(row, flex-start, center);
+                                            width: 80%;
                                         }
                                     }
                                 }
@@ -52,6 +61,12 @@
                                 }
                                 &:last-child {
                                     height: 8.7rem;
+                                    td {
+                                        width: 100%;
+                                        input {
+                                            width: 70%;
+                                        }
+                                    }
                                 }
                                 th {
                                     // width: 12rem;
@@ -126,6 +141,50 @@
                     }
                     .btn-wrap {
                         padding: 0 2rem;
+                    }
+                }
+                .result-01 {
+                    width: calc(100% - 8rem);
+                    margin: 0 4rem;
+                    padding-top: 2rem;
+                    padding-bottom: 4rem;
+                    table {
+                        width: 100%;
+                        border: 1px solid #BBBBBB;
+                        thead {
+                            background: #005c9e;
+                            color: #fff;
+                            height: 3rem;
+                            tr {
+                                th {
+                                    font-family: $pretendard;
+                                    font-size: 1.6rem;
+                                    font-weight: 500;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                height: 7rem;
+                                &.bg-on {
+                                    background: #f3f5f8;
+                                }
+                                td {
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    border: 1px solid #BBBBBB;
+                                    font-family: $pretendard;
+                                    font-size: 1.4rem;
+                                    color: $black;
+                                    font-weight: 400;
+                                    img {
+                                        width: 12rem;
+                                        height: 12rem;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 .result {

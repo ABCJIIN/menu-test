@@ -134,7 +134,7 @@ td {
   font-weight: 400;
   height: 100%;
 }
-td input {
+td input[type=text] {
   font-family: "Pretendard";
   font-weight: 400;
   font-size: 1.6rem;
@@ -144,7 +144,7 @@ td input {
   border: 1px solid #e4e4e4;
   padding: 1rem;
 }
-td input:focus {
+td input[type=text]:focus {
   border-color: #e4e4e4;
   box-shadow: 0 0 1px 1px #000;
   color: #222;
@@ -179,6 +179,18 @@ td select:focus {
   background: url("../../../assets/images/calendar.png") no-repeat 95%;
   background-size: 2.2rem;
   cursor: pointer;
+}
+
+.expose {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.expose input[type=radio] {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
 }
 
 html {
@@ -317,7 +329,7 @@ td {
   font-weight: 400;
   height: 100%;
 }
-td input {
+td input[type=text] {
   font-family: "Pretendard";
   font-weight: 400;
   font-size: 1.6rem;
@@ -327,7 +339,7 @@ td input {
   border: 1px solid #e4e4e4;
   padding: 1rem;
 }
-td input:focus {
+td input[type=text]:focus {
   border-color: #e4e4e4;
   box-shadow: 0 0 1px 1px #000;
   color: #222;
@@ -362,6 +374,18 @@ td select:focus {
   background: url("../../../assets/images/calendar.png") no-repeat 95%;
   background-size: 2.2rem;
   cursor: pointer;
+}
+
+.expose {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.expose input[type=radio] {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
 }
 
 #header {
@@ -510,14 +534,28 @@ td select:focus {
 #main #container #odaInform .office-data .search-01 table tbody tr:first-child td:nth-of-type(2) {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 80%;
+}
+#main #container #odaInform .office-data .search-01 table tbody tr:nth-child(2) td:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
 }
 #main #container #odaInform .office-data .search-01 table tbody tr:not(:last-child) {
   border-bottom: 1px solid #e4e4e4;
 }
 #main #container #odaInform .office-data .search-01 table tbody tr:last-child {
   height: 8.7rem;
+}
+#main #container #odaInform .office-data .search-01 table tbody tr:last-child td {
+  width: 100%;
+}
+#main #container #odaInform .office-data .search-01 table tbody tr:last-child td input {
+  width: 70%;
 }
 #main #container #odaInform .office-data .search-01 table tbody tr th {
   background: #f3f5f8;
@@ -585,6 +623,46 @@ td select:focus {
 }
 #main #container #odaInform .office-data .search-06 .btn-wrap {
   padding: 0 2rem;
+}
+#main #container #odaInform .office-data .result-01 {
+  width: calc(100% - 8rem);
+  margin: 0 4rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+#main #container #odaInform .office-data .result-01 table {
+  width: 100%;
+  border: 1px solid #BBBBBB;
+}
+#main #container #odaInform .office-data .result-01 table thead {
+  background: #005c9e;
+  color: #fff;
+  height: 3rem;
+}
+#main #container #odaInform .office-data .result-01 table thead tr th {
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+#main #container #odaInform .office-data .result-01 table tbody tr {
+  height: 7rem;
+}
+#main #container #odaInform .office-data .result-01 table tbody tr.bg-on {
+  background: #f3f5f8;
+}
+#main #container #odaInform .office-data .result-01 table tbody tr td {
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #BBBBBB;
+  font-family: "Pretendard";
+  font-size: 1.4rem;
+  color: #222222;
+  font-weight: 400;
+}
+#main #container #odaInform .office-data .result-01 table tbody tr td img {
+  width: 12rem;
+  height: 12rem;
 }
 #main #container #odaInform .office-data .result {
   width: calc(100% - 8rem);

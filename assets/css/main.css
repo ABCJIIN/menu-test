@@ -134,7 +134,7 @@ td {
   font-weight: 400;
   height: 100%;
 }
-td input {
+td input[type=text] {
   font-family: "Pretendard";
   font-weight: 400;
   font-size: 1.6rem;
@@ -144,7 +144,7 @@ td input {
   border: 1px solid #e4e4e4;
   padding: 1rem;
 }
-td input:focus {
+td input[type=text]:focus {
   border-color: #e4e4e4;
   box-shadow: 0 0 1px 1px #000;
   color: #222;
@@ -179,6 +179,18 @@ td select:focus {
   background: url("../../../assets/images/calendar.png") no-repeat 95%;
   background-size: 2.2rem;
   cursor: pointer;
+}
+
+.expose {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.expose input[type=radio] {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
 }
 
 html {
@@ -317,7 +329,7 @@ td {
   font-weight: 400;
   height: 100%;
 }
-td input {
+td input[type=text] {
   font-family: "Pretendard";
   font-weight: 400;
   font-size: 1.6rem;
@@ -327,7 +339,7 @@ td input {
   border: 1px solid #e4e4e4;
   padding: 1rem;
 }
-td input:focus {
+td input[type=text]:focus {
   border-color: #e4e4e4;
   box-shadow: 0 0 1px 1px #000;
   color: #222;
@@ -362,6 +374,18 @@ td select:focus {
   background: url("../../../assets/images/calendar.png") no-repeat 95%;
   background-size: 2.2rem;
   cursor: pointer;
+}
+
+.expose {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.expose input[type=radio] {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
 }
 
 #header {
